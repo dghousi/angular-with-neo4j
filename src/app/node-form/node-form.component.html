@@ -1,0 +1,10 @@
+<form (ngSubmit)="createNode(form)" #form="ngForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" ngModel required>
+  
+    <label for="description">Description:</label>
+    <input type="text" id="description" name="description" ngModel required>
+  
+    <button type="submit" [disabled]="form.invalid">Create</button>
+  </form>
+  

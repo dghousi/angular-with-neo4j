@@ -1,0 +1,17 @@
+<table>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Description</th>
+      <th></th>
+    </tr>
+    <tr *ngFor="let node of nodes">
+      <td>{{ node.id }}</td>
+      <td>{{ node.name }}</td>
+      <td>{{ node.description }}</td>
+      <td>
+        <button (click)="deleteNode(node.id || '')">Delete</button>
+      </td>
+    </tr>
+  </table>
+  
